@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tarea asincronica 4</h1>
+    <script>
+        //En este ejercicio deberás escribir una función llamada contarDeA_n que tenga los
+       //Parámetros contar_de_a y contar_hasta. Además, deberá escribir en la consola los
+       //números desde el 1 hasta contar_hasta en intervalos de contar_de_a.
+       //PISTA: Si ponemos 2 y 10 como Argumentos en el llamado, la Función deberá contar de a
+       //dos hasta llegar a diez.
+
+    function contarDeA_n (contar_de_a, contar_hasta ) {
+        let i = 1;
+        while (i <= contar_hasta) {
+        console.log (i);
+        i = i + contar_de_a
+        } 
+        i=i +1
+        }
+
+        // FizzBuzz II : La Venganza de FizzBuzz
+        
+    let i = 1;
+    let palabra1 = prompt('palabra1') 
+    let palabra2 = prompt('palabra2') 
+    let numeromax = prompt('número max') 
+
+        while ( i <= numeromax){
+            let mensaje = " "
+            if ((i%3 == 0) && (i%5 ==0)){
+                mensaje = i +(","+ palabra1+ palabra2);
+                
+            }
+            else if (i%3 == 0){
+                mensaje = i + (","+ palabra1);
+            }else if (i%5 == 0){
+                mensaje = i + (","+ palabra2);
+            }else {
+                mensaje = i
+            }
+            console.log(mensaje);
+            i++
+        }
+
+    </script>
+</body>
+</html>
